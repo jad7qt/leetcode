@@ -9,5 +9,5 @@ class Solution(object):
     if (k == 0):
       return
     for i in range(len(nums)):
-      spot = (len(nums) - k + i) % len(nums)
+      spot = (i - k) % len(nums)
       nums[i] = copy[spot]
