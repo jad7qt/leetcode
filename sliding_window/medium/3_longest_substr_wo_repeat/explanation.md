@@ -25,8 +25,8 @@ class Solution(object):
 ```
 
 ### Complexity Analysis
-#### Time Complexity: $O(n)$
-For this sliding window approach, our longest case for both loops is over the entire list length, $n$. This results in an overall worse case iteration of 2n, a linear time complexity. 
+#### Time Complexity: $O(n^2)$
+For this sliding window approach, our longest case for both loops is over the entire list length, $n$. Each character is visited at most twice. However, within this loop we create 
 
 #### Space Complexity: $O(n)$
 For all inputs, a string is stored representing the substring. The length of this string, in the worst case, can be the entire size of the 
